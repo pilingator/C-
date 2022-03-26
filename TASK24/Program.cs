@@ -4,6 +4,7 @@
 //[5, 18, 123, 6, 2] -> 1
 //[1, 2, 3, 6, 2] -> 0
 //[10, 11, 12, 13, 14] -> 5
+
 int[] RandArray(int lenght)
 {
     int[] answer = new int[lenght];
