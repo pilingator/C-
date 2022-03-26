@@ -9,7 +9,7 @@ int[] RandArray(int lenght)
     int[] answer = new int[lenght];
     for (int i = 0; i < lenght; i++)
     {
-        answer[i] = new Random().Next(-100, 100);
+        answer[i] = new Random().Next(-1000, 1000);
     }
     return answer;
 }
@@ -24,14 +24,14 @@ void printArr(int[] Mas)
 }
 
 
-int[] arr = RandArray(12);
+int[] arr = RandArray(123);
 printArr(arr);
 int count = 0;
 void Exist(int[] arr)
 {
 
 
-    for (int i = 0; i < 12; i++)
+    for (int i = 0; i < 123; i++)
     {
         if (arr[i] > 10 && arr[i] < 100)
            
