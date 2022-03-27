@@ -28,7 +28,7 @@ int min = arr[0];
 void maximum(int[] arr)
 {
 
-    for (int i = 0; i < 12; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
         if(arr[i] > max)
         {
@@ -41,7 +41,7 @@ void maximum(int[] arr)
 void minimum(int[] arr)
 {
 
-    for (int i = 0; i < 12; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
         if(arr[i] < min)
         {
