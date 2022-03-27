@@ -22,17 +22,17 @@ void printArr(int[] Mas)
 
 int[] arr = RandArray(12);
 printArr(arr);
-int sum = 0;
 
-void sumEl(int[] arr)
+
+int sumEl(int[] arr)
 {
-
-    for (int i = 0; i < 12; i += 2)
+    int sum = 0;
+    for (int i = 0; i < arr.Length; i += 2)
     {
            
-        sum = sum + arr[i];
+        sum += arr[i];
     }
-
+    return sum;
 }
-sumEl(arr);
-Console.WriteLine($"Сумма нечетных элементов массива: {sum}");
+
+Console.WriteLine($"Сумма нечетных элементов массива: {sumEl(arr)}");
