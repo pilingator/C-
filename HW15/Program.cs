@@ -23,17 +23,17 @@ void printArr(int[] Mas)
 int[] arr = RandArray(12);
 printArr(arr);
 int count = 0;
-void chet(int[] arr)
+int chet(int[] arr)
 {
 
 
-    for (int i = 0; i < 12; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i] % 2 == 0)
            
         count++;
     }
-
+    return count; // функция взвращает значение, а не меняет глобальную переменную
 }
-chet(arr);
-Console.WriteLine($"Четных чисел в массиве {count}");
+//chet(arr);
+Console.WriteLine($"Четных чисел в массиве {chet(arr)}");
