@@ -1,4 +1,5 @@
 ﻿// Задача 3: Задайте двумерный массив. Найдите сумму элементов главной диагонали.
+
 int[,] FillArray(int row, int column)
 {
     int[,] array = new int[row, column];
