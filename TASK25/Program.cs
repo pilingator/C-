@@ -23,7 +23,7 @@ void printArr(int[] Mas)
 }
 
 
-int[] arr = RandArray(9);
+int[] arr = RandArray(8);
 printArr(arr);
 
 int[] proizv(int[] arr)
@@ -38,6 +38,7 @@ int[] proizv(int[] arr)
     {
         result[i] = arr[i] * arr[arr.Length - i - 1];
     }
+    if (arr.Length % 2 ==1)
     result[result.Length - 1] = arr[result.Length - 1];
     return result;
 }
